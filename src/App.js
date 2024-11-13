@@ -1,5 +1,4 @@
 import React from "react";
-import { Footer } from "./components/footer/Footer";
 import { Header } from "./components/header/Header";
 import { Home } from "./pages/home/Home";
 import { Login } from "./pages/login/Login";
@@ -22,7 +21,6 @@ const App = () => {
           <Route exact path="/account" element={<Account />} />
           <Route exact path="/create" element={<Create />} />
         </Routes>
-        <Footer />
       </Router>
     </>
   );
