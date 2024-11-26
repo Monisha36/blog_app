@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "./blog.css";
+import "../../pages/home/Home";
 import { blog as defaultBlogData } from "../../assets/data/data";
-import { AiOutlineTags, AiOutlineClockCircle, AiOutlineComment, AiOutlineShareAlt } from "react-icons/ai";
+import { AiOutlineTags, AiOutlineClockCircle } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 export const Card = () => {
@@ -14,25 +14,22 @@ export const Card = () => {
 
   return (
     <section className="blog">
-      <div className="container grid3">
+      <div className="container">
         {blogData.map((item) => (
-          <div className="box boxItems" key={item.id}>
+          <div className="box" key={item.id}>
             <div className="img">
               <img src={item.cover} alt={item.title} />
             </div>
             <div className="details">
               <div className="tag">
-                <AiOutlineTags className="icon" />
-                <a href="/">#{item.category}</a>
+                <Link to={`/details/${item.id}`}>#{item.category}</Link>
               </div>
-              <Link to={`/details/${item.id}`} className="link">
+              <Link to={`/details/${item.id}`}>
                 <h3>{item.title}</h3>
               </Link>
               <p>{item.desc.slice(0, 180)}...</p>
               <div className="date">
                 <AiOutlineClockCircle className="icon" /> <label>{item.date}</label>
-                <AiOutlineComment className="icon" /> <label>27</label>
-                <AiOutlineShareAlt className="icon" /> <label>SHARE</label>
               </div>
             </div>
           </div>

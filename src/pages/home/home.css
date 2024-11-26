@@ -1,0 +1,108 @@
+/* home.css */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #e1bee7); /* Gradient background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .blog {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .box {
+    background: rgba(255, 255, 255, 0.2); /* Glass effect */
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(31, 38, 135, 0.45);
+  }
+  
+  .img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #f48fb1;
+  }
+  
+  .details {
+    padding: 1.5rem;
+  }
+  
+  .details .tag a {
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #f48fb1, #ff8a65);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .details h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 1rem 0;
+  }
+  
+  .details h3:hover {
+    color: #ff5722;
+    text-decoration: underline;
+  }
+  
+  .details p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.5rem 0;
+  }
+  
+  .date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    color: #999;
+    margin-top: 1rem;
+  }
+  
+  .date .icon {
+    margin-right: 0.5rem;
+  }
+  
+  .button {
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background: linear-gradient(to right, #ff5722, #f48fb1);
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .button:hover {
+    background: linear-gradient(to left, #ff5722, #f48fb1);
+  }
+  

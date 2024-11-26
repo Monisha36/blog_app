@@ -1,0 +1,96 @@
+.profile {
+    position: relative;
+  }
+  
+  .profile .img {
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .profile .img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #6a11cb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .profile .img:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .openProfile {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 250px;
+    z-index: 1000;
+  }
+  
+  .openProfile .image {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #f7f9fc;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .openProfile .image .img img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .openProfile .text h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .openProfile .box {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background: transparent;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .openProfile .box:hover {
+    background: #f7f9fc;
+  }
+  
+  .openProfile .icon {
+    font-size: 20px;
+    color: #6a11cb;
+    margin-right: 10px;
+  }
+  
+  .openProfile h4 {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .openProfile button {
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .openProfile button:hover h4 {
+    color: #6a11cb;
+  }
+  

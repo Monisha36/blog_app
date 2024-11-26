@@ -1,11 +1,9 @@
 import React, { useState } from "react"
 import { IoSettingsOutline } from "react-icons/io5"
-import { BsBagCheck } from "react-icons/bs"
-import { AiOutlineHeart } from "react-icons/ai"
-import { GrHelp } from "react-icons/gr"
 import { BiLogOut } from "react-icons/bi"
 import { RiImageAddLine } from "react-icons/ri"
 import { Link } from "react-router-dom"
+import "./user.css";
 
 export const User = () => {
   const user = true
@@ -46,18 +44,6 @@ export const User = () => {
                     <h4>My Account</h4>
                   </button>
                 </Link>
-                <button className='box'>
-                  <BsBagCheck className='icon' />
-                  <h4>My Order</h4>
-                </button>
-                <button className='box'>
-                  <AiOutlineHeart className='icon' />
-                  <h4>Wishlist</h4>
-                </button>
-                <button className='box'>
-                  <GrHelp className='icon' />
-                  <h4>Help</h4>
-                </button>
                 <button className='box'>
                   <BiLogOut className='icon' />
                   <h4>Log Out</h4>

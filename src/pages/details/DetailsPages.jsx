@@ -86,11 +86,11 @@ export const DetailsPages = () => {
                   <h1>{post.title}</h1>
                   <p>{post.desc}</p>
                   <p>Author: {post.author || "Unknown"}</p>
-                  <div className="additionalContent">
+                  {/* <div className="additionalContent">
                     <p>
                       "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born..."
                     </p>
-                  </div>
+                  </div> */}
                 </>
               )}
             </div>
